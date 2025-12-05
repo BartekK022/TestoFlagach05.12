@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,5 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void ukryj(View view) {
         view.setVisibility(View.INVISIBLE);
+    }
+
+    public void ok(View view) {
+        Toast.makeText(this, "ten kolor musi zostac w fladze Polski", Toast.LENGTH_SHORT).show();
+
     }
 }
